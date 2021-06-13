@@ -1,0 +1,73 @@
+/**********
+Functions
+**********/
+/* // @function convertToRem($pixelSize) {
+//     @return ($pixelSize / 16) + rem;
+// } */
+
+/***********
+Variables
+************/
+/* // $background-sedan: #e28625;
+// $background-suv: #006971;
+// $background-luxury: #004140; */
+
+/***********
+Styles - Mobile first
+************/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100%;
+    background: red;
+}
+.content-wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+}
+
+/* // .sedan {
+//     background: $background-sedan;
+// }
+
+// .suv {
+//     background: $background-suv;
+// }
+
+// .luxury {
+//     background: $background-luxury;
+// } */
+
+h1 {
+    font-size: convertToRem(40);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
