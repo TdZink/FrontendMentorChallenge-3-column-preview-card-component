@@ -1,0 +1,34 @@
+/**********
+Functions
+**********/
+@function convertToRem($pixelSize) {
+    @return ($pixelSize / 16) + rem;
+}
+
+/**********
+Variables
+**********/
+$background-sedan: #e28625;
+$background-suv: #006971;
+$background-luxury: #006971;
+
+/**********
+Styles
+**********/
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.heading {
+    font-size: convertToRem(40);
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+}
+
+.attribution {
+    text-align: center;
+}
