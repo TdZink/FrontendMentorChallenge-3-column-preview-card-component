@@ -5,12 +5,16 @@ Functions
 Variables
 **********/
 /**********
-Styles
+Styles - Mobile first
 **********/
 .content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -18,16 +22,79 @@ Styles
       -ms-flex-align: center;
           align-items: center;
   font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9375rem;
 }
 
 .heading {
   font-size: 2.5rem;
   font-family: "Big Shoulders Display";
   font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+
+.card-width {
+  min-width: 287px;
+  padding-left: 48px;
+}
+
+.sedan {
+  background: #e28625;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.suv {
+  background: #006971;
+}
+
+.luxury {
+  background: #004140;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.description {
+  max-width: 231px;
+  color: white;
+  opacity: 0.75;
+  line-height: 1.6rem;
+}
+
+.learnMore {
+  border: 0;
+  background: white;
+  font-size: 0.9375rem;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  margin: 15px 0px 40px 0;
+  cursor: pointer;
+}
+
+.learnMore-sedan {
+  color: #e28625;
+}
+
+.learnMore-suv {
+  color: #006971;
+}
+
+.learnMore-luxury {
+  color: #004140;
+}
+
+.img-logo {
+  margin-top: 50px;
 }
 
 .attribution {
   text-align: center;
+  margin-top: 50px;
 }
+
+/**********
+Styles - Responsiveness
+**********/
 
 /*# sourceMappingURL=/style.97fcb138.css.map */

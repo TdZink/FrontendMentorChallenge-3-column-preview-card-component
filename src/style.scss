@@ -10,25 +10,88 @@ Variables
 **********/
 $background-sedan: #e28625;
 $background-suv: #006971;
-$background-luxury: #006971;
+$background-luxury: #004140;
 
 /**********
-Styles
+Styles - Mobile first
 **********/
 
 .content-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: "Lexend Deca", sans-serif;
+    font-size: convertToRem(15);
 }
 
 .heading {
     font-size: convertToRem(40);
     font-family: "Big Shoulders Display";
     font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.card-width {
+    min-width: 287px;
+    padding-left: 48px;
+}
+.sedan {
+    background: $background-sedan;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.suv {
+    background: $background-suv;
+}
+
+.luxury {
+    background: $background-luxury;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.description {
+    max-width: 231px;
+    color: white;
+    opacity: 0.75;
+    line-height: 1.6rem;
+}
+
+.learnMore {
+    border: 0;
+    background: white;
+    font-size: convertToRem(15);
+    font-family: "Lexend Deca", sans-serif;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    margin: 15px 0px 40px 0;
+    cursor: pointer;
+}
+
+.learnMore-sedan {
+    color: $background-sedan;
+}
+
+.learnMore-suv {
+    color: $background-suv;
+}
+
+.learnMore-luxury {
+    color: $background-luxury;
+}
+
+.img-logo {
+    margin-top: 50px;
 }
 
 .attribution {
     text-align: center;
+    margin-top: 50px;
 }
+
+/**********
+Styles - Responsiveness
+**********/
