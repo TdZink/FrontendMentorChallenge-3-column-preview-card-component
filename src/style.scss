@@ -34,7 +34,7 @@ Styles - Mobile first
 }
 
 .card-width {
-    min-width: 240px;
+    min-width: 265px;
     padding-left: 48px;
 }
 .sedan {
@@ -102,8 +102,8 @@ For desktop::
     hover will need to change button color of text and background
 **********/
 
-// TODO: Work on mobile landscape view. Example is at 800 width should still show 'desktop' layout but shrink margins to prevent scrolling
-@media all and (min-width: 950px) {
+//Would it be better to try and use landscape for mobile landscape responsiveness?
+@media all and (min-width: 750px) {
     * {
         margin: 0;
     }
@@ -115,6 +115,11 @@ For desktop::
         height: 100vh;
         overflow-y: hidden;
         flex-direction: row;
+    }
+
+    .card-width {
+        min-width: 240px;
+        padding-left: 20px;
     }
 
     .sedan {
@@ -129,16 +134,11 @@ For desktop::
     }
 
     .img-logo {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .heading {
         margin-bottom: 30px;
-    }
-
-    .description {
-        max-width: 212px;
-        margin-bottom: 50px;
     }
 
     .learnMore-sedan:hover {
@@ -154,5 +154,29 @@ For desktop::
     .learnMore-luxury:hover {
         background: $background-luxury;
         color: white;
+    }
+}
+
+@media all and (min-width: 950px) {
+    * {
+        margin: 0;
+    }
+    .html {
+        height: 100%;
+    }
+
+    .content-wrapper {
+        height: 100vh;
+        overflow-y: hidden;
+        flex-direction: row;
+    }
+
+    .description {
+        max-width: 212px;
+        margin-bottom: 50px;
+    }
+
+    .img-logo {
+        margin-bottom: 30px;
     }
 }
