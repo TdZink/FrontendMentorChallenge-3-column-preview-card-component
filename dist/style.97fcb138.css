@@ -158,6 +158,11 @@ For desktop::
     background: #004140;
     color: white;
   }
+
+  .description {
+    max-width: 212px;
+    margin-bottom: 30x;
+  }
 }
 @media all and (min-width: 950px) {
   * {
@@ -178,12 +183,17 @@ For desktop::
   }
 
   .description {
-    max-width: 212px;
+    max-width: 237px;
     margin-bottom: 50px;
   }
 
   .img-logo {
     margin-bottom: 30px;
+  }
+
+  .card-width {
+    min-width: 260px;
+    padding-left: 40px;
   }
 }
 
