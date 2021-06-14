@@ -34,7 +34,7 @@ Styles - Mobile first
 }
 
 .card-width {
-  min-width: 240px;
+  min-width: 265px;
   padding-left: 48px;
 }
 
@@ -102,6 +102,63 @@ For desktop::
     once you get to certian width the flex direction needs to chagne from column to row
     hover will need to change button color of text and background
 **********/
+@media all and (min-width: 750px) {
+  * {
+    margin: 0;
+  }
+
+  .html {
+    height: 100%;
+  }
+
+  .content-wrapper {
+    height: 100vh;
+    overflow-y: hidden;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .card-width {
+    min-width: 240px;
+    padding-left: 20px;
+  }
+
+  .sedan {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+
+  .luxury {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  .img-logo {
+    margin-bottom: 10px;
+  }
+
+  .heading {
+    margin-bottom: 30px;
+  }
+
+  .learnMore-sedan:hover {
+    background: #e28625;
+    color: white;
+  }
+
+  .learnMore-suv:hover {
+    background: #006971;
+    color: white;
+  }
+
+  .learnMore-luxury:hover {
+    background: #004140;
+    color: white;
+  }
+}
 @media all and (min-width: 950px) {
   * {
     margin: 0;
@@ -120,43 +177,13 @@ For desktop::
             flex-direction: row;
   }
 
-  .sedan {
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 10px;
-  }
-
-  .luxury {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 0;
-  }
-
-  .img-logo {
-    margin-bottom: 30px;
-  }
-
-  .heading {
-    margin-bottom: 30px;
-  }
-
   .description {
     max-width: 212px;
     margin-bottom: 50px;
   }
 
-  .learnMore-sedan:hover {
-    background: #e28625;
-    color: white;
-  }
-
-  .learnMore-suv:hover {
-    background: #006971;
-    color: white;
-  }
-
-  .learnMore-luxury:hover {
-    background: #004140;
-    color: white;
+  .img-logo {
+    margin-bottom: 30px;
   }
 }
 
